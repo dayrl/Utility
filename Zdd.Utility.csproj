@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E9E4A3C-BB7A-40BB-BBD4-085D329A0358}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zdd.Utility</RootNamespace>
+    <AssemblyName>Zdd.Utility</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArgumentValidator.cs" />
+    <Compile Include="ASPHelper.cs" />
+    <Compile Include="AttributeHelper.cs" />
+    <Compile Include="BaseConfig.cs" />
+    <Compile Include="BigInteger.cs" />
+    <Compile Include="ByteHelper.cs" />
+    <Compile Include="ByteUtils.cs" />
+    <Compile Include="ClassHelper.cs" />
+    <Compile Include="ConfigPara\IniFileInvoke.cs" />
+    <Compile Include="ConverterHelper.cs" />
+    <Compile Include="DateTime2APITime.cs" />
+    <Compile Include="DesSecurity.cs" />
+    <Compile Include="DllInvoke.cs" />
+    <Compile Include="Encryption.cs" />
+    <Compile Include="EnumHelper.cs" />
+    <Compile Include="EventHelper.cs" />
+    <Compile Include="ExcelHelper.cs" />
+    <Compile Include="FieldHelper.cs" />
+    <Compile Include="Filter\BaseTransformationFilter.cs" />
+    <Compile Include="Filter\Crop.cs" />
+    <Compile Include="Filter\IFilter.cs" />
+    <Compile Include="Filter\IFilterInformation.cs" />
+    <Compile Include="Filter\RGB.cs" />
+    <Compile Include="FormHelper.cs" />
+    <Compile Include="Graphs\Bars\BarGraph.cs" />
+    <Compile Include="Graphs\Bars\BarGraphPlotter.cs" />
+    <Compile Include="Graphs\Bars\BarGraphRenderer.cs" />
+    <Compile Include="Graphs\Bars\BarSlice.cs" />
+    <Compile Include="Graphs\Bars\BarSliceCollection.cs" />
+    <Compile Include="Graphs\Bars\MultipleBarSlice.cs" />
+    <Compile Include="Graphs\GraphBase.cs" />
+    <Compile Include="Graphs\GraphRenderer.cs" />
+    <Compile Include="Graphs\GridGraphBase.cs" />
+    <Compile Include="Graphs\Legends\Legend.cs" />
+    <Compile Include="Graphs\Legends\LegendEntry.cs" />
+    <Compile Include="Graphs\Legends\LegendEntryCollection.cs" />
+    <Compile Include="Graphs\Legends\LegendRenderer.cs" />
+    <Compile Include="Graphs\Lines\DateLines\DateLine.cs" />
+    <Compile Include="Graphs\Lines\DateLines\DateLineCollection.cs" />
+    <Compile Include="Graphs\Lines\DateLines\DateLineGraph.cs" />
+    <Compile Include="Graphs\Lines\DateLines\DateLineGraphRenderer.cs" />
+    <Compile Include="Graphs\Lines\DateLines\DateLinePoint.cs" />
+    <Compile Include="Graphs\Lines\DateLines\DateLinePointCollection.cs" />
+    <Compile Include="Graphs\Lines\DateLines\DateXAxisText.cs" />
+    <Compile Include="Graphs\Lines\DateLines\DateXAxisTextCollection.cs" />
+    <Compile Include="Graphs\Lines\Line.cs" />
+    <Compile Include="Graphs\Lines\LineCollection.cs" />
+    <Compile Include="Graphs\Lines\LineGraph.cs" />
+    <Compile Include="Graphs\Lines\LineGraphRenderer.cs" />
+    <Compile Include="Graphs\Lines\LinePoint.cs" />
+    <Compile Include="Graphs\Lines\LinePointCollection.cs" />
+    <Compile Include="Graphs\Lines\XAxisText.cs" />
+    <Compile Include="Graphs\Lines\XAxisTextCollection.cs" />
+    <Compile Include="Graphs\Pies\PieGraph.cs" />
+    <Compile Include="Graphs\Pies\PieGraphRenderer.cs" />
+    <Compile Include="Graphs\Pies\PieSlice.cs" />
+    <Compile Include="Graphs\Pies\PieSliceCollection.cs" />
+    <Compile Include="ImageHelper.cs" />
+    <Compile Include="ImageProcessor.cs" />
+    <Compile Include="IOHelper.cs" />
+    <Compile Include="IP2Net.cs" />
+    <Compile Include="ListControlHelper.cs" />
+    <Compile Include="LocalRelatin\LocalRelation.cs" />
+    <Compile Include="MethodHelper.cs" />
+    <Compile Include="Net\ITcpListener.cs" />
+    <Compile Include="Net\SimpleHttpServer.cs" />
+    <Compile Include="Net\TcpServer.cs" />
+    <Compile Include="Net\TcpServerManager.cs" />
+    <Compile Include="Net\ThreadTcpListener.cs" />
+    <Compile Include="Net\UrlDecoder.cs" />
+    <Compile Include="NumberHelper.cs" />
+    <Compile Include="ObjectHelper.cs" />
+    <Compile Include="PerformanceCounterHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyHelper.cs" />
+    <Compile Include="RegistryHelper.cs" />
+    <Compile Include="SerializerHelper.cs" />
+    <Compile Include="Singleton.cs" />
+    <Compile Include="SM4.cs" />
+    <Compile Include="SMS4.cs" />
+    <Compile Include="StringHelper.cs" />
+    <Compile Include="StringValitor.cs" />
+    <Compile Include="StructHelper.cs" />
+    <Compile Include="SystemTools.cs" />
+    <Compile Include="TcpServiceLite.cs" />
+    <Compile Include="TypeChecker.cs" />
+    <Compile Include="UnmanagedImage.cs" />
+    <Compile Include="ValueCheck.cs" />
+    <Compile Include="XmlSerializerHelper.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
